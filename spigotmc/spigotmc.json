@@ -1,6 +1,10 @@
 
 {
   "Image": "quay.io/skyport/java:21",
+  "AltImages": {
+    "quay.io/skyport/java:21",
+    "quay.io/skyport/java:17"
+  }
   "Cmd": "",
   "Env": [
     "START=java -Xms128M -XX:MaxRAMPercentage=95.0 -Dterminal.jline=false -Dterminal.ansi=true -jar server.jar"
