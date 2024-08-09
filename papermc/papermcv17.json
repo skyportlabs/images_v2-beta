@@ -1,0 +1,26 @@
+{
+    "Image": "quay.io/fantasyhosting/java:17",
+    "Cmd": "",
+    "Env": [
+        "START=java -Xms128M -XX:MaxRAMPercentage=95.0 -Dterminal.jline=false -Dterminal.ansi=true -jar server.jar"
+    ],
+    "Scripts": {
+        "Install": [
+            {
+                "Uri": "https://papermc.io/api/v2/projects/paper/versions/1.21/builds/119/downloads/paper-1.21-119.jar",
+                "Path": "server.jar"
+            },
+            {
+                "Uri": "https://raw.githubusercontent.com/skyportlabs/images_v2/main/spigotmc/server.properties",
+                "Path": "server.properties"
+            }
+        ]
+    },
+    "Name": "Minecraft Java 17: PaperMC",
+    "Description": "PaperMC is an optimized, high-performance fork of SpigotMC for Minecraft servers. It aims to improve performance and stability by offering additional features, enhanced configuration options, and bug fixes. Known for its robust plugin compatibility and active development community, PaperMC is a preferred choice for server administrators looking to enhance their Minecraft multiplayer experience.",
+    "Author": "joao@fantasyhosting.com.br",
+    "AuthorName": "FantasyHost",
+    "Meta": {
+        "Version": "FantasyHost Images"
+    }
+}
